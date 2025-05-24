@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+h1 {
+  background: #1a2a44;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.select-symbol {
+  margin: 2rem auto;
+}
+
+.select-symbol p {
+  font-size: 1.5rem;
+  color: #1a2a44;
+  margin-bottom: 1rem;
+}
+
+.select-symbol button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #1a2a44;
+  color: white;
+  cursor: pointer;
+  margin: 0 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+}
+
+.select-symbol button:hover {
+  background: #2a3b5a;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+  margin: 2rem auto;
+  width: 310px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: grid;
+  place-items: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1a2a44;
+  transition: transform 0.2s;
+}
+
+.cell:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background: #e0e0e0;
+}
+
+#game-message, #final-message {
+  margin: 2rem;
+  padding: 0.8rem 1.5rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#game-message {
+  background: #1a2a44;
+}
+
+#final-message {
+  background: #28a745;
+}
+
+#end-game, #start-again {
+  margin: 1rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+}
+
+#end-game {
+  background: #ff4d4d;
+}
+
+#end-game:hover {
+  background: #e63939;
+}
+
+#start-again {
+  background: #28a745;
+}
+
+#start-again:hover {
+  background: #218838;
+}
+
+.hidden {
+  display: none !important;
+}
